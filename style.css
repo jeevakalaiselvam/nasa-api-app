@@ -26,9 +26,12 @@ body {
 }
 
 .main-container {
-    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
     width: 700px;
-    height: 100vh;
+    max-height: 100vh;
+    padding: 1rem;
+    overflow: auto;
 }
 
 img {
@@ -49,6 +52,10 @@ img:hover {
     cursor: pointer;
 }
 
+.selected {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
 a.link {
     width: 100%;
     text-decoration: none;
@@ -56,10 +63,49 @@ a.link {
     padding: 1rem;
     color: #ffffff;
     position: absolute;
+    text-align: center;
     bottom: 0px;
     left: 0px;
 }
 
 .card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.astronomy-image-inner {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.astronomy-image-inner h2 {
+    text-align: center;
+}
+
+.astronomy-image-inner p {
+    line-height: 1.7rem;
+}
+
+.refresh {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.refresh:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    animation: one 0.5s normal;
+    animation-direction: alternate;
+}
+
+@keyframes one {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
