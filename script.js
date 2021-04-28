@@ -1,4 +1,5 @@
 //Declare needed variables and contants
+//Storing API KEY is not recommended without encrypting it first. Here it is used for demonstration purpose.
 const API_KEY = "QxgBRdvklgyAi2Y60vNS9knNdaiAJ9a8CHOv2L2h";
 const API_ASTRONOMY_PICTURE =
     "https://api.nasa.gov/planetary/apod?api_key=" + API_KEY + "&count=1";
