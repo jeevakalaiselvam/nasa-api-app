@@ -18,6 +18,19 @@ body {
     justify-content: center;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: aliceblue;
+    width: 700px;
+    height: 100vh;
+}
+
 img {
     width: 100%;
 }
@@ -31,8 +44,9 @@ img:hover {
     width: 300px;
     font-size: 1rem;
     position: relative;
-    margin: 1rem 0.5rem;
+    margin: 0 1rem 1rem 0;
     background-color: black;
+    cursor: pointer;
 }
 
 a.link {
@@ -44,4 +58,8 @@ a.link {
     position: absolute;
     bottom: 0px;
     left: 0px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
