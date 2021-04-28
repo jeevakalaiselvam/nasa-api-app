@@ -28,10 +28,8 @@ body {
 .main-container {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin: 1rem 0;
-    width: 700px;
-    max-height: 100vh;
+    width: 1000px;
     padding: 1rem;
-    overflow: auto;
 }
 
 img {
@@ -40,16 +38,6 @@ img {
 
 img:hover {
     background-size: cover;
-}
-
-.card {
-    font-family: inherit;
-    width: 300px;
-    font-size: 1rem;
-    position: relative;
-    margin: 0 1rem 1rem 0;
-    background-color: black;
-    cursor: pointer;
 }
 
 .selected {
@@ -73,19 +61,18 @@ a.link {
 }
 
 .astronomy-image-inner {
-    display: flex;
     position: relative;
+}
+
+.inside-two {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.astronomy-image-inner h2 {
-    text-align: center;
-}
-
-.astronomy-image-inner p {
-    line-height: 1.7rem;
+.inside-two p {
+    line-height: 1.5rem;
 }
 
 .refresh {
