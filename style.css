@@ -68,7 +68,7 @@ a.link {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .inside-two p {
